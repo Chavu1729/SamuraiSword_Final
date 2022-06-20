@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <FrameLayout
+            android:id="@+id/healthP1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/corazonP1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/corazon_p1"
+                app:srcCompat="@drawable/corazon" />
+
+            <TextView
+                android:id="@+id/vidaP1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/vidap1"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/digraceP1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/flowerP1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/flower_p1"
+                app:srcCompat="@drawable/flower"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/honorP1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/honorp1"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/poderP1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/textview"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherPlayerLayout"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.112">
+
+        <LinearLayout
+            android:id="@+id/player2Info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/healthP2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/corazonP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/corazonp2"
+                    app:srcCompat="@drawable/corazon" />
+
+                <TextView
+                    android:id="@+id/vidaP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="vidaP2"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    tools:ignore="TextContrastCheck"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/digraceP2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/flower" />
+
+                <TextView
+                    android:id="@+id/honorP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="honorP2"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/poderP2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Poder P2"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player3Info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/healthP3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/corazonP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="corazonP3"
+                    app:srcCompat="@drawable/corazon" />
+
+                <TextView
+                    android:id="@+id/vidaP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="vidaP3"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    tools:ignore="TextContrastCheck"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/digraceP3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/flower" />
+
+                <TextView
+                    android:id="@+id/honorP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="honorP3"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/poderP3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Poder P3"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player4Info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/healthP4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/corazonP4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="corazonP4"
+                    app:srcCompat="@drawable/corazon" />
+
+                <TextView
+                    android:id="@+id/vidaP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="vidaP4"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    tools:ignore="TextContrastCheck"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/digraceP4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/flower" />
+
+                <TextView
+                    android:id="@+id/honorP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="honorP4"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/poderP4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Poder P4"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player5Info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/healthP5"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/corazonP5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="corazonP5"
+                    app:srcCompat="@drawable/corazon" />
+
+                <TextView
+                    android:id="@+id/vidaP5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="vidaP5"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    tools:ignore="TextContrastCheck"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/digraceP5"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/flower" />
+
+                <TextView
+                    android:id="@+id/honorP5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="honorP5"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/poderP5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Poder P5"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                tools:ignore="TextContrastCheck"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="@+id/cardButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toEndOf="@+id/cardButton"
+        app:layout_constraintTop_toTopOf="@+id/cardButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherPlayerLayout"
+        app:layout_constraintVertical_bias="0.685" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

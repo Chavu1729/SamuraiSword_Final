@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Samurai Sword</string>
+    <string name="poder">Poder</string>
+    <string name="vidap4">vidaP4</string>
+    <string name="vida">Vida</string>
+    <string name="vidap2">vidaP2</string>
+    <string name="vidap3">vidaP3</string>
+    <string name="vidap5">vidaP5</string>
+    <string name="flower5">Flower5</string>
+    <string name="heart4">Heart4</string>
+    <string name="poder_p2">Poder P2</string>
+    <string name="poder_p3">Poder P3</string>
+    <string name="poder_p4">Poder P4</string>
+    <string name="poder_p5">Poder P5</string>
+    <string name="honor">Honor</string>
+    <string name="flower_P1">FlowerP1</string>
+    <string name="todo">TODO</string>
+    <string name="corazon_p1">Corazon P1</string>
+    <string name="flower_p1">Flower P1</string>
+    <string name="textview">TextView</string>
+    <string name="honorp1">honorP1</string>
+    <string name="vidap1">vidaP1</string>
+    <string name="corazonp2">corazonP2</string>
+    <string name="usar_carta" />
+</resources>
